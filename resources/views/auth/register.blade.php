@@ -47,7 +47,7 @@
 
 				<section class="form-group mb-3 form-inline">
 					<label for="password_confirm" class="text-light" style="margin-left: 10px;">تکرار رمز عبور</label>
-					<input type="password" name="password_confirm" class="form-control @error('password') is-invalid @enderror" value="{{old('password')}}" placeholder="تکرار رمز عبور">
+					<input type="password" name="password_confirmation" class="form-control @error('password') is-invalid @enderror" value="{{old('password')}}" placeholder="تکرار رمز عبور">
 					@error('password_confirm')
 						<div class="alert alert-danger">{{$message}}</div>
 					@enderror
