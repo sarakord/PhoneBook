@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ورود</title>
+	<title>ثبت نام</title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap.min.css')}}">
@@ -13,7 +13,7 @@
 
  	<section class="container-fluid bg">
 
-		@include('../error/errors')
+		@include('../errors/errors')
 
 
 		<section class="d-flex mx-auto col-5 justify-content-center m-5">
