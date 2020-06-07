@@ -14,8 +14,10 @@
 use Illuminate\Support\Facades\Route;
 
 
-Auth::Routes();
+Auth::Routes(['verify'=>true]);
 
 Route::get('/', function () {
-    return view('phonebook');
+    return view('main');
 });
+
+Route::get('/home','HomeController@index')->middleware('auth' , 'verified');

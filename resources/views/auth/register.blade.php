@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>ثبت نام</title>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap.min.css')}}">
-  <link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap-reboot.css')}}">
+@extends('layout.master')
+
+@section('link')
+
   <link rel="stylesheet" type="text/css" href="{{asset('css/register.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{asset('css/font.css')}}">
-</head>
-<body dir="rtl" style="text-align:right;font-family: vazir;">
+
+@endsection  
+
+
+
+@section('title')
+
+	ثبت نام 
+
+@endsection
+
+
+@section('register')
 
  	<section class="container-fluid bg">
 
@@ -61,8 +67,5 @@
 		</section>		
 	</section>
  
-<!--  js file --> 
-<script src="{{asset('jquery-3.5.0.min.js')}}"></script>
-<script src="{{asset('Bootstrap/js/bootstrap.min.js')}}"></script>
-</body>
-</html>
+
+@endsection
