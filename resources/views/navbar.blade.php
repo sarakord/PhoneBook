@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="navbar-brand dropdown">
-      <a class="navbar-brand dropbtn" href="#">کاربر گرامی :  {{Auth::user()->name}}</a>
+      <a class="navbar-brand dropbtn" href="#">کاربر گرامی : 
+        @if(Auth::check()) 
+          {{Auth::user()->name}}
+        @endif
+     </a>
       <div class="dropdown-content">
         <a href="#" class="bg-dark text-light">ویرایش پروفایل</a>
         <form action="{{route('logout')}}" method="POST">

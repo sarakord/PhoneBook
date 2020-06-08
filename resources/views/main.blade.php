@@ -1,12 +1,12 @@
  
-@extends('layout.master')
+@extends('layout.auth')
 
 
 @section('title')
 
   ورود | ثبت نام
 
-@end section
+@endsection
 
 
 @section('content')
@@ -20,8 +20,8 @@
   </div>
   <div class="row">
     <div class="d-flex mx-auto ">
-      <a href="{{route('login')}}" class="col-6 btn btn-info text-center font-weight-bold mr-5" style="height: 45px;width: 100px; font-size: 14pt;" role="button">ورود</a>
-      <a href="{{route('register')}}" class="col-6 btn btn-info text-center font-weight-bold" style="height: 45px;
+      <a href="{{route('login')}}" class="col-6 btn btn-info text-center font-weight-bold ml-3" style="height: 45px;width: 100px; font-size: 14pt;" role="button">ورود</a>
+      <a href="{{route('register')}}" class="col-6 btn btn-info text-center font-weight-bold " style="height: 45px;
     width: 100px;font-size: 14pt;" role="button">ثبت نام</a>
     </div>
   </div>

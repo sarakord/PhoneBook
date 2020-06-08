@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-
+    	//
     }
 
 
@@ -58,13 +58,35 @@ class ContactController extends Controller
 
     public function edit(Contact $contact)
     {
-
+    	return view('crud.edit' , compact('contact'));
     }
 
 
-    public function update(Contact $contact)
+    public function update(Request $request, Contact $contact)
     {
+    	try {
+    		$contact->name = $request->name;
+    		$contact->phone = $request->phone;
+    		$contact->mobile = $request->mobile;
+    		$contact->fax = $request->fax;
+    		$contact->address = $request->address;
+    		$contact->description = $request->description;
+    		$file = $request->file('image');
+    		if (!empty($file))
+    		{
+    			$oldImage = $contact->image;
+    			unlink('images/contacts/'.$oldImage);
+    			$image = time().$file->getClientOriginalName();
+    			$contact->image = $image;
+    			$contact->save();
+    		}
+    		
+    	} catch (Exception $exception) {
+    		return back()->with('warning' , $exception);
+    	}
 
+    	$msg = "ویرایش اطلاعات $contact->name با موفقیت انجام شد";
+    	return redirect(route('home'))->with('success', $msg);
     }
 
 

@@ -30,8 +30,8 @@ route::prefix('/contact')->middleware('auth')->group(function (){
     route::get('','ContactController@index')->name('contacts');
     route::get('/create' , 'ContactController@create')->name('contact.create');
     route::post('/store','ContactController@store')->name('contact.store');
-    route::get('/edit/{Contact}','ContactController@edit')->name('contact.edit');
-    route::post('/update/{Contact}','ContactController@update')->name('contactes.update');
-    route::get('/destroy/{Contact}','ContactController@destroy')->name('contact.destroy');
+    route::get('/edit/{contact}','ContactController@edit')->name('contact.edit');
+    route::post('/update/{contact}','ContactController@update')->name('contact.update');
+    route::get('/destroy/{contact}','ContactController@destroy')->name('contact.destroy');
 
 });

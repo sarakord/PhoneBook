@@ -19,5 +19,6 @@
 <!--  js file --> 
 <script src="{{asset('jquery-3.5.0.min.js')}}"></script>
 <script src="{{asset('Bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('Bootstrap/js/popper.min.js')}}"></script>
 </body>
 </html>

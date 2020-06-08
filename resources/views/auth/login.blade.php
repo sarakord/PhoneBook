@@ -9,7 +9,7 @@
 
 @section('title')
 	
-	ورود
+	ورود | ثبت نام
 
 @endsection
 
