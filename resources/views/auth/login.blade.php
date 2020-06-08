@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.auth')
 
 @section('link')
 
@@ -14,7 +14,7 @@
 @endsection
 
 
-@section('login')
+@section('content')
 	<section class="container-fluid bg">
 
 		@include('../errors/errors')

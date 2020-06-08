@@ -7,12 +7,9 @@
   <link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap-reboot.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/font.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{asset('css/navbar.css')}}">
   @yield('link')
 </head>
 <body dir="rtl" style="text-align:right;font-family: vazir;">
-
-	@include('navbar')
  
  	@yield('content')
 

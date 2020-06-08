@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.auth')
 
 @section('link')
 
@@ -15,7 +15,7 @@
 @endsection
 
 
-@section('register')
+@section('content')
 
  	<section class="container-fluid bg">
 
